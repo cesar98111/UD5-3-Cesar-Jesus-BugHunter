@@ -37,6 +37,7 @@ public class Main {
                     System.out.println("Seleccione uno de los libros");
                     biblio.showCatalog();
                     int posicion = sc.nextInt();
+                    sc.nextLine();
                     usuario.obtenerLibro(posicion, biblio);
                     break;
                 case "3":
@@ -52,10 +53,11 @@ public class Main {
                     System.out.println("Introduzca el título del libro que quiere devolver");
                     System.out.println(usuario);
                     int libroParaDevolver = sc.nextInt();
+                    sc.nextLine();
                     String tituloLibro = usuario.obtenerTituloLibro(libroParaDevolver);
                     usuario.devolverLibro(tituloLibro, biblio);
                     break;
-                case "Q":
+                case "q":
                     salir = true;
             }
         }
