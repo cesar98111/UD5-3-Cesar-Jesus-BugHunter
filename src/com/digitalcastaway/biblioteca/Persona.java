@@ -13,8 +13,8 @@ public class Persona extends Usuario {
 
     @Override
     public void obtenerLibro(int posicion, Biblioteca biblioteca) {
-        String titulo = biblioteca.prestarLibro(posicion);
-        librosPrestados.add(titulo);
+
+        librosPrestados.add(biblioteca.prestarLibro(posicion));
     }
 
     @Override

@@ -19,6 +19,7 @@ public class Main {
         boolean salir = false;
 
         while (!salir) {
+            System.out.println(" ");
             System.out.println("Seleccione una opción");
             System.out.println("1. Ver catálogo");
             System.out.println("2. Tomar prestado un libro concreto");
