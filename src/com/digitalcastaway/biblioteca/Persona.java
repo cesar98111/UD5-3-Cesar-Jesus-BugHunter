@@ -48,5 +48,6 @@ public class Persona extends Usuario {
             contador ++;
         }
 
+        return output;
     }
 }
